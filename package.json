@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-crud",
+  "version": "1.0.0",
+  "description": "a simple node.js crud application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "simplecrud",
+    "nodejs"
+  ],
+  "author": "waya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "hbs": "^4.0.6",
+    "mv": "^2.1.1",
+    "mysql": "^2.17.1"
+  }
+}

@@ -1,0 +1,33 @@
+{{> header }}
+
+<div class="container">
+
+    <a href="/add_user" class="btn-add">Add a New User</a>
+
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th class="w-25">Image</th>
+            <th class="w-25">Name</th>
+            <th>Username</th>
+            <th>Action</th>
+            {{#each users}}
+        </tr>
+        <td>{{ no }}</td>
+        <td>
+            <img src="{{ image }}" alt="Image {{ no }}" class="w-100">
+        </td>
+        <td>{{ name }}</td>
+        <td>{{ username }}</td>
+        <td>
+            <a href="/edit/{{ id }}" class="btn btn-sm btn-primary">Edit</a>
+            <a href="/{{ id }}" onclick="return confirm('Are you sure?')" class="btn btn-sm btn-danger">Delete</a>
+        </td>
+        <tr>
+            {{/each}}
+
+        </tr>
+    </table>
+</div>
+
+{{> footer }}
